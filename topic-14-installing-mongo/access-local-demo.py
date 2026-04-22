@@ -6,7 +6,7 @@ from pymongo import MongoClient
 host = os.environ.get("MONGO_HOST", "127.0.0.1")
 port = int(os.environ.get("MONGO_PORT", "27017"))
 username = os.environ.get("MONGO_APP_USERNAME", "petsApp")
-password = os.environ.get("MONGO_APP_PASSWORD", "")
+password = os.environ.get("MONGO_APP_PASSWORD", "user1")
 auth_db = os.environ.get("MONGO_AUTH_DB", "pets_demo")
 db_name = os.environ.get("MONGO_DB", "pets_demo")
 uri = os.environ.get("MONGO_URI", "").strip()
